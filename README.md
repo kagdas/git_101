@@ -165,13 +165,30 @@ git tag --delete v1.0.0
 
 ---
 
-## Git Branch
+## Git Pull/Fetch
 
 ```sh
 git pull: uzak repodaki bütün dosyaları hemen local pojemize ekler. Genelde conflict yeriz.
 
+git pull
+git pull origin
+
 git fetch: biz kontrol ettikten sonra istersek local projemize ekleriz.
 Not: Conflict yememek için kullanmak gerekir.
+
+git fetch
+git branch -a
+git checkout remotes/origin/main
+git checkout main
+git merge origin/main
+```
+
+---
+
+## Git Branch
+
+```sh
+
 ```
 
 ---
