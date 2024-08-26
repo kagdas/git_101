@@ -185,10 +185,13 @@ git merge origin/main
 
 ---
 
-## Git Branch
+## Git Conflict
 
 ```sh
-
+git reset HEAD~1
+git add .
+git commit - "çakışma sonrası"
+git push --force
 ```
 
 ---
