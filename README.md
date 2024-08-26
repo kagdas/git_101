@@ -11,9 +11,10 @@
 > Github
 > GitLab
 
--
+- Git: Versiyon kontrol sistemi
+- Github: Git Repository
 
-## Git Version
+## Git Config
 
 ```sh
 git -v
@@ -30,7 +31,17 @@ git config core.autocrlf true
 
 ---
 
-## Git
+## Git Sıklıkla Kullanılan Komutlar
+
+```sh
+clear
+git status
+git log
+```
+
+---
+
+## Git Remote
 
 ```sh
 git init
@@ -45,28 +56,15 @@ git push -u origin
 
 ---
 
-## Git Sıklıkla Kullanılan Komutlar
-
-```sh
-clear
-git status
-git log
-```
-
----
-
 ## Git Commit
 
 ```sh
 git add .
 git commit -m "mesaj adını"
 git push
-
 NOT: Eğer önceden ilgili dosya "git add" ile eklenmişse
 git commit -a -m "commit adı"
 git push
-
-
 ```
 
 ---
@@ -121,6 +119,59 @@ git remote set-url yeniRemoteAdi URLYazıyoruz
 git log
 git diff commitID1 commitID2
 git diff  dad5338a1bc2109e93dc89b26dbab5f75485f521 fe795f46ba672
+```
+
+---
+
+## .gitignore
+
+```sh
+#Bu dosyayı takip etme
+secret.txt
+
+#React, Angular vs
+node_modules
+```
+
+---
+
+## Git Stash
+
+```sh
+git add .
+git stash
+git stash save "stash kendi ismi"
+git stash list
+
+git stash apply stash:{0}
+git stash drop stash:{0}
+
+git stash pop
+```
+
+---
+
+## Git Tag
+
+```sh
+git add .
+git tag v1.0.0
+git show v1.0.0
+git checkout v1.0.0
+git checkout v1.0.0
+git push origin v1.0.0
+git tag --delete v1.0.0
+```
+
+---
+
+## Git Branch
+
+```sh
+git pull: uzak repodaki bütün dosyaları hemen local pojemize ekler. Genelde conflict yeriz.
+
+git fetch: biz kontrol ettikten sonra istersek local projemize ekleriz.
+Not: Conflict yememek için kullanmak gerekir.
 ```
 
 ---
