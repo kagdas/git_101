@@ -3,9 +3,15 @@
 # Workshop Git, GitHub, Gitlab
 
 [Github]()
-[Github]()
+[GitLab]()
 
 ---
+
+> Git
+> Github
+> GitLab
+
+-
 
 ## Git Version
 
